@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta http-equiv="refresh" content="3;URL=https://www.youtube.com/channel/UC-nedNJz52wVef0ATj1PHNA">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönlendiriliyorsun</title>
+  <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
+  <SCRIPT LANGUAGE="Javascript"><!--
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+var EnableRightClick = 0;
+if(isNS)
+document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+if(EnableRightClick==1){ return true; }
+else {return false; }
+}
+function mousehandler(e){
+if(EnableRightClick==1){ return true; }
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+function keyhandler(e) {
+var myevent = (isNS) ? e : window.event;
+if (myevent.keyCode==96)
+EnableRightClick = 1;
+return;
+}
+document.oncontextmenu = mischandler;
+document.onkeypress = keyhandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+//-->
+</script>
+    
+    <script language='JavaScript1.2'>	
+function disableselect(e)
+{	
+return false	
+}	
+function reEnable(){	
+return true	
+}	
+document.onselectstart=new Function ("return false")	
+if (window.sidebar)
+{	
+document.onmousedown=disableselect	
+document.onclick=reEnable	
+}	
+</script>  
+</head>
+  <link rel="stylesheet" href="assets/css/yt-style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    body {
+
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+    }
+    textarea {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: 75px;
+    }
+    a {
+        color: white;
+        position: absolute;
+        bottom: 20px;
+    }
+</style>
+
+<body>
+    <img src="assets/img/favicon.png">
+    <h2>Yönlendiriliyorsun...</h2>
+
+    <div>
+<br>
+      <br>
+      <br>
+      <br>
+    </div>
+<script>
+    window.onload = function() {
+        var isU = t => t == t.toLocaleUpperCase();
+        document.getElementById("kd-tr").onkeyup = () => (function(parent){document.getElementById("tr-kd").value = parent.value.split('').map((x,y)=>parent.value.length==y?x:x=='g'&&['a','e','u','ı','o','ü','i','ö',"â","û","î"].includes(parent.value.split('')[y-1].toLocaleLowerCase())?'':parent.value.split('')[y-1]=='g'&&['a','e','u','ı','o','ü','i','ö',"â","û","î"].includes(parent.value.split('')[y-2].toLocaleLowerCase())?'':parent.value.split('')[y]).join('')})(document.getElementById("kd-tr"));        
+        document.getElementById("tr-kd").onkeyup = () => (function(parent){document.getElementById('kd-tr').value = parent.value.split('').map((x,y) => ['a','e','u','ı','o','ü','i','ö',"â","û","î"].includes(x.toLocaleLowerCase()) ? x+(isU(x)?'G':'g')+x: x).join('');})(document.getElementById("tr-kd"));
+    }   
+</script>
+
+</html>
